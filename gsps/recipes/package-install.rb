@@ -3,6 +3,6 @@ yum_package ['gamin', 'fcgi', 'net-snmp'] do
 end
 
 rpm_package 'spawn-fcgi' do
-  package_name default[:rpmpath][:spawnfcgi]
+  package_name node[:rpmpath][:spawnfcgi]
   action :install
 end
