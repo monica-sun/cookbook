@@ -1,4 +1,12 @@
-yum_package ['gamin', 'fcgi', 'net-snmp'] do
+yum_package 'gamin' do
+  action :install
+end
+
+yum_package 'fcgi' do
+  action :install
+end
+
+yum_package 'net-snmp' do
   action :install
 end
 
